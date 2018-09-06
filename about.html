@@ -1,0 +1,129 @@
+
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pizza Pantheon | Welcome</title>
+<meta name="author" content="Seth, Willow, Matt, Richie">
+  <meta name="description" content="description">
+  <meta name="keywords" content="pizza">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> <!--URL Favicon-->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+   
+  <img id="column_L" src="assets/img/single_column.png" alt="Greek column">
+  <img id="column_R" src="assets/img/single_column.png" alt="Greek column">
+
+    
+<body>
+  <header class="header">
+  <div class="hamburger">
+    <button class="button hamburger__button js-menu__toggle">
+      <span class="hamburger__label">Open menu</span>
+    </button>
+  </div>
+  
+  <nav class="menu">
+    <ul class="list menu__list">
+    
+      <li class="menu__logo">
+        <img id="menu__logo" src="./assets/img/Pizza_Pantheon_WHITE.png" alt="Pizza Pantheon logo white" width="100" height="150">
+      </li>
+      <li class="menu__group">
+        <a href="about.html" class="link menu__link">About</a>
+      </li>
+      <li class="menu__group">
+        <a href="menu.html" class="link menu__link">Menu</a>
+      </li>
+      <li class="menu__group">
+        <a href="index.html" class="link menu__link">Order Now</a>
+    <div class="menu_blackout"></div>
+    <div id="div_bar">
+    </div>
+    </ul>
+      <img class="nav_background" src="./assets/img/oven1.jpeg" alt="Oven interior with pizzas and fire">
+
+  </nav>
+</header>
+
+  <div class="about-img">
+  
+      <img id="pantheon_about" src="./assets/img/Pizza_Pantheon_WHITE.png" alt="Pizza Pantheon logo white">
+    
+    <a href="index.html" class="order">ORDER NOW</a>
+    </div>
+    <div class="hours">
+  <h3>Hours of Operation</h3>
+  <p>Monday-Saturday: 10a-7p<br>
+  Sunday: 11a-5p<br>
+  <p>EIT 547 ||
+2801 South University Ave. ||
+Little Rock, Arkansas 72204
+  
+  </p>
+</div>
+    
+    <h1 id="about_title"> About </h1>
+
+  <div class="container_about">
+<img id="chef" src ="assets/img/chef.jpeg" alt ="chef"/>
+
+<div class="bio">
+<P id="chef_name"><strong> Chef Donatello Scarsi</strong></p>
+<p><strong>Age:</strong> 38</p>
+<p><strong>Hometown:</strong> Pontinia, Italy</p>
+<p><strong>Bio:</strong></p>
+
+<p>Donatello Scarsi first developed culinary skills producing and selling cheese.</p> 
+<p>It was in Naples, however—the birthplace of pizza just an hour away from his hometown—where Scarsi went to study the art and craft of the pizzaiolo.</p> 
+<p>After learning all things Neapolitan, among some of the best pizza makers in the world, Scarsi came to the United States and opened several successful pizzerias before settling in Little Rock Arkansas.</P>
+</div>
+
+</div>
+  <div class="container_about">
+    <img class="local" src="https://www.gianteagle.com/PageFiles/87925/locallyGrownStamp.png" alt="locally grown"/>
+    <div id="local_info">
+<h1>Locally Grown Ingredients</h1>
+<p><strong>All ingredients are locally grown.
+Here's a list of our providers.</strong></p>
+<h3>
+8 Acres Farm- Little Rock
+Arkansas Grown Products:</h3>
+<p>
+Banana Peppers - Varietys, Basil, Beans - Snap, Pole, Variety, Butternut Squash, Collard Greens, Cottonseed, Cucumbers, Flowers, Green Beans, Kale, Mustard Greens, Okra, Peanuts, Peppers - Variety, Rutabagas, Squash, Sweet Potatoes, Turnip Greens, Turnips, Vegetables, Yellow Squash, Zucchini.
+</p>
+<h3>Hillcrest Farmers Market- Little Rock Arkansas Grown Products:
+</h3>
+<p>
+Annuals, Apples, Banana Peppers - Varietys, Basil, Beans, Beef, Beets, Blackberries, Blueberries, Broccoli, Butternut Squash, Cabbage, Cantaloupe, Cherry Tomatoes, Chicken, Cilantro, Collard Greens, Corn, Cucumbers, Eggs.
+</p>
+</div>
+</div>
+
+  <script>
+    (function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.nodeMenu = settings.nodeMenu;
+      settings.nodeMenuButton.addEventListener('click', this.toggle.bind(this));
+    }
+
+    toggle() {
+      return this.nodeMenu.classList.toggle('js-menu_activated');
+    }
+  }
+
+  let nodeMenu = document.querySelector('body');
+  
+  new Menu({
+    nodeMenu: nodeMenu,
+    nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
+  });
+})();
+  </script>
+</body>
+</html>

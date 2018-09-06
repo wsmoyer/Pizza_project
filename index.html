@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+    <title>Pizza Pantheon | Welcome </title>
+    
+  <meta name="author" content="Seth, Willow, Matt, Richie">
+  <meta name="description" content="description">
+  <meta name="keywords" content="pizza">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> <!--URL Favicon-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--Google Analytics-->
+
+  <script type="text/javascript">
+  
+
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
+   _gaq.push(['_trackPageview']);
+   (function()
+   {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+  </script>
+  <!--password:array-->
+  
+  </head>
+  
+  <img id="column_L" src="assets/img/single_column.png" alt="Greek column">
+  <img id="column_R" src="assets/img/single_column.png" alt="Greek column">
+  
+  
+  <body>
+        <div class="container">
+  <img id="pantheon" src="./assets/img/Pizza_Pantheon_WHITE.png" alt="Pizza Pantheon logo white" width="100" height="150">
+  
+ <div class="page__demo">
+    
+    <div class="page__container">
+      <span class="page__name"></span>
+      <span class="page__hint">
+       
+      </span>
+
+    </div>
+  </div>
+<header class="header">
+  <div class="hamburger">
+    <button class="button hamburger__button js-menu__toggle">
+      <span class="hamburger__label">Open menu</span>
+    </button>
+  </div>
+  <nav class="menu">
+    <ul class="list menu__list">
+    
+      <li class="menu__logo">
+        <img id="menu__logo" src="./assets/img/Pizza_Pantheon_WHITE.png" alt="Pizza Pantheon logo white" width="100" height="150">
+      </li>
+      <li class="menu__group">
+        <a href="about.html" class="link menu__link">About</a>
+      </li>
+      <li class="menu__group">
+        <a href="menu.html" class="link menu__link">Menu</a>
+      </li>
+      <li class="menu__group">
+        <a href="index.php" class="link menu__link">Order Now</a>
+    <div class="menu_blackout"></div>
+    <div id="div_bar">
+    </div>
+
+    </ul>
+    
+    <img class="nav_background" src="./assets/img/oven1.jpeg" alt="Oven interior with pizzas and fire">
+    
+  </nav>
+</header>
+<div class="hours">
+  <h3>Hours of Operation</h3>
+  <p>Monday-Saturday: 10a-7p<br>
+  Sunday: 11a-5p<br>
+  <p>EIT 547 ||
+2801 South University Ave. ||
+Little Rock, Arkansas 72204
+  </p>
+</div>
+  <form id="pizza-form">
+    
+    <div class="form-item">
+    <div>
+     <label for="customer_name">Name</label>
+   <input type="text" name="customer_name" id="customer_name"  placeholder="Full name here.." />
+    </div>
+    
+   <div>
+   <label for="customer_phone">Phone Number</label>
+    <input type="text" name="customer_phone" id="phone" placeholder="(555)123-4567">
+    </div>
+    </div>
+    
+     <div class="pizza-select">
+       
+<div class="pizza_and_flavor">
+<label id="label" for="pizza_type">Pizza</label>
+<br>
+<select class="pizza_choices" name="pizza_type">
+  <option value="cheese">Cheese</option>
+  <option value="pepperoni">Pepperoni</option>
+  <option value="hawaiian">Hawaiian</option>
+  <option value="supreme">Supreme</option>
+  <option value="the hog">The Hog</option>
+    <option value="veggie">Veggie</option>
+</select>
+</div>
+
+<div class="size">
+  <label id="label" for="pizza_size">Size</label>
+  <br>
+<select class="pizza_choices" name="pizza_size" id="size">
+  <option value="small">Small</option>
+  <option value="medium">Medium</option>
+  <option value="large">Large</option>
+</select>
+</div>
+
+<div class="crust">
+ <label id="label" for="crust_options">Crust</label>
+ <br>
+<select class="pizza_choices" name="crust_options">
+  <option value="thick">Thick</option>
+  <option value="thin">Thin</option>
+ </select>
+</div>
+</div>
+
+ 
+<button id="add-pizza">Add Pizza</button>
+
+<div id="drink_flex">
+<div class="drink_and_option">
+ <label for="drink_type">Drinks</label>
+ <br>
+<select id="drink" name="drink_type">
+  <option value="sprite">Sprite</option>
+  <option value="coke">Coke</option>
+  <option value="diet coke">Diet Coke</option>
+  <option value="dr.pepper">Dr.Pepper</option>
+   <option value="iced tea">Iced Tea</option>
+   <option value="none">None</option>
+</select>
+</div>
+
+<div class="drink_and_quantity">
+<label for="drink_quantity">Drink Quantity</label>
+<br>
+  <input type="number" id="drink-quantity" name="drink_quantity" min="1" max="10" step="1">
+</div>
+</div>
+
+<div id="breadstick_flex">
+<div class="bread_and_type">
+  <label for="breadstick_type">Breadsticks</label>
+  <br>
+<select id="breadstick" name="breadstick_type">
+  <option value="regular">Regular</option>
+  <option value="stuffed">Stuffed</option>
+  <option value="none">None</option>
+ </select>
+ </div>
+ 
+ <div class="sticks_and_quantity">
+<label for="breadstick_quantity" id="breadstick_quantity">Breadstick Quantity</label>
+<br>
+  <input type="number" id="bread" name="breadstick_quantity" min="1" max="10" step="1">
+  </div>
+</div>
+
+<div id="salad_flex">
+<div class="salad_YesNo">
+ <label for="salad">Salad</label>
+ <br>
+<select id="salad-quantity" name="salad">
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+</div>
+
+<div class="salad_and_quantity">
+<label for="salad_quantity">Salad Quantity</label>
+<br>
+  <input id="salad_input" type="number" name="salad_quantity" min="1" max="10" step="1">
+</div>
+  
+    </div>
+
+          <div class="submit_order"><input type="submit" value="Submit Order" id="pizza-order"></div>   
+
+  </form>
+  
+  <!--Autorun JS-->
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  
+    <div id="find_us">
+    <h3>Ready for pickup? Find us here!</h3>
+    </div>
+    
+<div id="map">
+<iframe
+  width="675"
+  height="300"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB12qnWDVMOT1d1Yp1ywSr8sUo-2WYirt4
+    &q=Donaghey+College+of+Engineering+and+Information+Technology" allowfullscreen>
+</iframe>
+</div>
+</div>
+<div id="modal">
+  <div class="modalBody">
+    <span  class="close">&times;</span>
+  <p>Thank you for ordering from Pizza Pantheon!
+  <br>We'll notify you via text as soon as your order is ready. </p>  
+    
+  </div>
+  </div>
+
+
+
+
+<!--AIzaSyB12qnWDVMOT1d1Yp1ywSr8sUo-2WYirt4-->
+<!--Google Map API key-->
+  <script>
+    (function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.nodeMenu = settings.nodeMenu;
+      settings.nodeMenuButton.addEventListener('click', this.toggle.bind(this));
+    }
+
+    toggle() {
+      return this.nodeMenu.classList.toggle('js-menu_activated');
+    }
+  }
+
+  let nodeMenu = document.querySelector('body');
+  
+  new Menu({
+    nodeMenu: nodeMenu,
+    nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
+  });
+})();
+  </script>
+
+  
+  </body>
+
+</html>
